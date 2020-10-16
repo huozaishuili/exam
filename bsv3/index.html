@@ -49,9 +49,6 @@
 .main {
     padding: 30px;
 }
-.badge{
-  float: right;
-}
     </style>
   </head>
   <body>
@@ -139,9 +136,9 @@
             </div>
               <div class="panel-body">
                 <ul class="nav nav-pills nav-stacked">
-                  <li role="presentation" role="alert"><a href="#" class="alert alert-info">订单审批<span class="badge">42</span></a></li>
-                  <li role="presentation" role="alert"><a href="#"class="alert alert-info">收款确认<span class="badge">20</span></a></li>
-                  <li role="presentation" role="alert"><a href="#"class="alert alert-info">付款确认<span class="badge">10</span></a></li>
+                  <li role="presentation"><a href="#" class="alert alert-info">订单审批<span class="badge pull-right">42</span></a></li>
+                  <li role="presentation"><a href="#" class="alert alert-info">收款确认<span class="badge pull-right">20</span></a></li>
+                  <li role="presentation"><a href="#" class="alert alert-info">付款确认<span class="badge pull-right">10</span></a></li>
                 </ul>
               </div>
           </div>
@@ -153,6 +150,7 @@
             <div class="panel-heading">最新订单</div>
               <div class="panel-body">
                <table class="table table-striped">
+                <thead>
                 <tr>
                   <th>#</th>
                   <th>产品</th>
@@ -161,6 +159,7 @@
                   <th>业务员</th>
                 </tr>
                 <tr>
+                  <tbody>
                   <td>1</td>
                   <td>Apple Macbook air</td>
                   <td>10</td>
@@ -181,11 +180,12 @@
                   <td>50000</td>
                   <td>刘老根</td>
                 </tr>
+                </tbody>
+                </thead>
               </table>
-              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                查看详情
-                <span aria-hidden="true">&raquo;</span>
-              </button>
+              <p><button type="button" class="btn btn-primary">
+                查看详细 &raquo;
+              </button></p>
             </div>
           </div>
         </div>
